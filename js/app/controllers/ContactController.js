@@ -14,13 +14,14 @@ function ContactController() {
         this.contacts.splice(index, 1);
     }
 
-    this.addContact = function(name, phone){
-        // debugger;
-        var contact = {
-            name: name,
-            phoneNumber: phone
-        }
-        this.contacts.push(contact)
+    this.addContact = function(){
+        this.contacts.push({
+            name: this.name,
+            phoneNumber: this.phoneNumber
+
+        })
+
+
     }
 }
 
